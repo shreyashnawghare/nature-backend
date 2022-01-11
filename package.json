@@ -1,0 +1,25 @@
+{
+  "name": "homefoods",
+  "version": "1.0.0",
+  "description": "Online Home Foods shop",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon backend/index.js",
+    "server": "nodemon backend/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder.js",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "author": "Prasad",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.8",
+    "nodemon": "^2.0.6"
+  }
+}
