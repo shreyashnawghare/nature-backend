@@ -4,7 +4,7 @@ const cors=require('cors')
 const connectDB=require('./config/db')
 dotenv.config();
 connectDB();
-const port=process.env.PORT || 5000
+const port=process.env.PORT || 6000
 const app=express();
 const productRoutes =require('./routes/productRoutes');
 const usersRoutes=require('./routes/userRoutes');
